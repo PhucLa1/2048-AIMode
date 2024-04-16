@@ -182,10 +182,15 @@ function playGameWithDelay(board) {
     playNextMove(); // Bắt đầu với lần đầu tiên
 }
 
+document.getElementById("toggleButton").addEventListener("click", function() {
+    gameRunning = !gameRunning; // Đảo ngược trạng thái của trò chơi (dừng nếu đang chạy và ngược lại)
+    if (gameRunning) {
+        playGameWithDelay(boardReal); // Nếu trạng thái là true, tiếp tục chạy trò chơi
+    }
+});
+
+if(localStorage.getItem("ai-mode") == 1){
+    playGameWithDelay(boardReal);
+}
 
 
-// // Sử dụng hàm playGameWithDelay với board ban đầu
-playGameWithDelay(boardReal);
-
-// let out = brute_force(boardReal,3)
-// console.log(out.move)
