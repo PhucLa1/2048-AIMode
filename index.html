@@ -1,53 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>2048 - AI GAME</title>
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="start.css">
 </head>
-
 <body>
-
-    <div class="score-container">
-        <div>Score : <span id="current-score">0</span></div>
-        <div>High Score : <span id="high-score">0</span></div>
+    <div class="ai-game-container">
+        <h2 class="ai-game">AI GAME</h2>
     </div>
-
-    <div class="game-container">
-        <div class="grid">
-            <div class="cell" data-row="0" data-col="0"></div>
-            <div class="cell" data-row="0" data-col="1"></div>
-            <div class="cell" data-row="0" data-col="2"></div>
-            <div class="cell" data-row="0" data-col="3"></div>
-            <div class="cell" data-row="1" data-col="0"></div>
-            <div class="cell" data-row="1" data-col="1"></div>
-            <div class="cell" data-row="1" data-col="2"></div>
-            <div class="cell" data-row="1" data-col="3"></div>
-            <div class="cell" data-row="2" data-col="0"></div>
-            <div class="cell" data-row="2" data-col="1"></div>
-            <div class="cell" data-row="2" data-col="2"></div>
-            <div class="cell" data-row="2" data-col="3"></div>
-            <div class="cell" data-row="3" data-col="0"></div>
-            <div class="cell" data-row="3" data-col="1"></div>
-            <div class="cell" data-row="3" data-col="2"></div>
-            <div class="cell" data-row="3" data-col="3"></div>
+    <div class="container">
+        <div class="logo">
+            <h1 class="logo-text">2048</h1>
+            <div class="square"></div> 
         </div>
+        <button onclick="window.location.href = `http://127.0.0.1:5500/Select/main.html`" class="play-button">PLAY</button> 
     </div>
-
-    <div id="game-over">
-        Game Over!
-        <button id="restart-btn">Restart Game</button>
-    </div>
-    <button id="toggleButton">Toggle</button>
-
-
-    <script src="script.js"></script>
-    <!-- <script src="monte-carlo-tree-search.js"></script> -->
-    <!-- <script src="monte-carlo-v2.js"></script> -->
-    <!-- <script src="dredge-up-algorithms.js"></script> -->
-    <script src="dredge-up-algorithms.js"></script>
 </body>
-
 </html>
